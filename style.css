@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+    color: black;
+    font-family: sans-serif;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;    
+}
+
+hr {
+    border-color: black;
+    width: 25px;
+    margin-left: 0;
+}
+
+table {
+    width: 90%;
+}
+table, th, td {
+    border-color: gray;
+    border-style:ridge;
+}
+
+th, td {
+    padding: 10px;
+}
