@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hātr - The Dating App That Matches You By Dislikes</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); /* Red gradient */
+        }
+        .btn-primary {
+            background-color: #ef4444; /* Red */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Fully rounded */
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #dc2626; /* Darker red on hover */
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="gradient-bg py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-white text-4xl font-bold rounded-lg p-2">Hātr</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-white hover:text-gray-200 font-medium transition duration-300">About</a></li>
+                    <li><a href="#features" class="text-white hover:text-gray-200 font-medium transition duration-300">Features</a></li>
+                    <li><a href="#download" class="btn-primary hover:bg-red-700 transition duration-300">Download App</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 text-center rounded-b-3xl">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-extrabold mb-6 leading-tight">
+                Find Your Perfect (Dis)Match.
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Tired of superficial connections? Hātr connects you with people who hate all the right things, just like you.
+            </p>
+            <a href="#download" class="btn-primary text-lg px-8 py-4 inline-block transform hover:scale-105 transition duration-300">
+                Get Hātr Now!
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-10">Why Hātr?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card">
+                    <h4 class="text-2xl font-semibold mb-4 text-red-600">Beyond Superficial Likes</h4>
+                    <p class="text-gray-700">
+                        Traditional apps focus on shared interests, which often leads to shallow connections. We believe shared dislikes reveal deeper compatibility.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <h4 class="text-2xl font-semibold mb-4 text-red-600">Authentic Connections</h4>
+                    <p class="text-gray-700">
+                        Bonding over mutual aversions creates a unique, relatable foundation for genuine relationships.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <h4 class="text-2xl font-semibold mb-4 text-red-600">Filter Out Deal-Breakers</h4>
+                    <p class="text-gray-700">
+                        Identify fundamental incompatibilities upfront, saving you time and avoiding frustrating dates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-12">How Hātr Works</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Feature 1: Dislike Profile -->
+                <div class="order-2 md:order-1">
+                    <h4 class="text-3xl font-semibold mb-4 text-red-600">1. Create Your Hātr List</h4>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Build a profile around what you truly can't stand. Choose from pre-defined categories or add your own unique pet peeves. Rate the intensity of your dislikes, from "mild annoyance" to "absolute deal-breaker."
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>"Slow walkers"</li>
+                        <li>"Cilantro"</li>
+                        <li>"Unsolicited advice"</li>
+                        <li>"Loud chewers"</li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <img src="https://placehold.co/400x300/ef4444/ffffff?text=My+Hates" alt="Hātr Profile Example" class="rounded-2xl shadow-xl w-full max-w-sm">
+                </div>
+
+                <!-- Feature 2: Hātr Match Algorithm -->
+                <div class="order-3 flex justify-center">
+                    <img src="https://placehold.co/400x300/ef4444/ffffff?text=Hātr+Match" alt="Hātr Matching Algorithm" class="rounded-2xl shadow-xl w-full max-w-sm">
+                </div>
+                <div class="order-4">
+                    <h4 class="text-3xl font-semibold mb-4 text-red-600">2. Our Algorithm Finds Your (Dis)Match</h4>
+                    <p class="text-lg text-gray-700">
+                        Our smart algorithm prioritizes users who share your most intense dislikes, while minimizing conflicting aversions. We calculate a "Hātr Score" to show your compatibility.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Common Ground Communication -->
+                <div class="order-6 md:order-5">
+                    <h4 class="text-3xl font-semibold mb-4 text-red-600">3. Connect on Common Ground</h4>
+                    <p class="text-lg text-gray-700">
+                        Your first conversation starts with a shared dislike. Break the ice with "So, you hāte [shared dislike] too? Tell me why!" and discover a surprisingly powerful connection.
+                    </p>
+                </div>
+                <div class="order-5 md:order-6 flex justify-center">
+                    <img src="https://placehold.co/400x300/ef4444/ffffff?text=Chat+Screen" alt="Hātr Chat Interface" class="rounded-2xl shadow-xl w-full max-w-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="download" class="gradient-bg text-white py-20 text-center rounded-t-3xl">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold mb-6">Ready to Find Your Perfect (Dis)Match?</h3>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Download Hātr today and start connecting with people who truly get you.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="btn-primary text-lg px-8 py-4 inline-block transform hover:scale-105 transition duration-300">
+                    Download on the App Store
+                </a>
+                <a href="#" class="btn-primary text-lg px-8 py-4 inline-block transform hover:scale-105 transition duration-300">
+                    Get it on Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Hātr. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
